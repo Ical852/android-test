@@ -31,10 +31,8 @@ class MainViewModel(val repository: Repository): ViewModel() {
                 data.value = response
 
                 loading.value = false
-                failed.value = false
             } catch (e: Exception) {
                 loading.value = false
-                failed.value = true
             }
         }
     }
